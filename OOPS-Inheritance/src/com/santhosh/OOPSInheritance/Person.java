@@ -5,12 +5,11 @@ public class Person {
 	public String email;
 	public String phoneNumber;
 
+	public Person(String name) {
+		this.name=name;
+	}
 	public String getName() {
 		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getEmail() {
@@ -28,5 +27,9 @@ public class Person {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
+	public String toString() {
+		return String.format(
+				"Name - %s\nEmail Id: - %s\nContact Number - %s",
+				name, email, phoneNumber);
+	}
 }

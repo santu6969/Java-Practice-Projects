@@ -1,4 +1,5 @@
 package com.santhosh.OOPSInheritance;
+
 import java.math.BigDecimal;
 
 public class Employee extends Person {
@@ -6,6 +7,11 @@ public class Employee extends Person {
 	public String employer;
 	public char employeeGrade;
 	public BigDecimal salary;
+
+	public Employee(String name, String title) {
+		super(name);
+		this.title = title;
+	}
 
 	public String getTitle() {
 		return title;
@@ -40,8 +46,7 @@ public class Employee extends Person {
 	}
 
 	public String toString() {
-		return String.format(
-				"Name - %s\nEmail Id: - %s\nContact Number - %s\nJob Title: - %s\nEmployer: - %s, Employee Grade: -  %c\nSalary: -  %s\n",
-				name, email, phoneNumber, title, employer, employeeGrade, salary);
+		return String.format("%s\nJob Title: - %s\nEmployer: - %s\nEmployee Grade: -  %c\nSalary: -  %s\n",
+				super.toString(), title, employer, employeeGrade, salary);
 	}
 }

@@ -2,7 +2,13 @@ package com.santhosh.OOPSInheritance;
 
 public class Student extends Person {
 	private String year;
-	private String college;
+	private String collegeName;
+	
+	public Student(String name, String collegeName) {
+		super(name);
+		this.collegeName=collegeName;
+	}
+	
 
 	public String getYear() {
 		return year;
@@ -13,14 +19,14 @@ public class Student extends Person {
 	}
 
 	public String getCollege() {
-		return college;
+		return collegeName;
 	}
 
 	public void setCollege(String college) {
-		this.college = college;
+		this.collegeName = college;
 	}
 
 	public String toString() {
-		return name + " " + getCollege() + year;
+		return super.toString() + "\n" + collegeName +"\n"+ year;
 	}
 }
