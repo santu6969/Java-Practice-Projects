@@ -1,3 +1,4 @@
+package com.santhosh.OOPSInheritance;
 
 public class Person {
 	public String name;

@@ -1,3 +1,4 @@
+package com.santhosh.OOPSInheritance;
 
 public class Student extends Person {
 	private String year;

@@ -1,3 +1,4 @@
+package com.santhosh.OOPSInheritance;
 import java.math.BigDecimal;
 
 public class StudentRunner {
