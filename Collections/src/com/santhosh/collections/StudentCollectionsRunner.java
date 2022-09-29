@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class AscendingStudentComparator implements Comparator<StudentCollection> {
-	public int compare(StudentCollection student1, StudentCollection student2) {
+class AscendingStudentComparator implements Comparator<Student> {
+	public int compare(Student student1, Student student2) {
 		return Integer.compare(student1.getId(), student2.getId());
 	}
 }
@@ -14,10 +14,10 @@ class AscendingStudentComparator implements Comparator<StudentCollection> {
 public class StudentCollectionsRunner {
 
 	public static void main(String[] args) {
-		List<StudentCollection> students = List.of(new StudentCollection(1, "Santhosh"),
-				new StudentCollection(355, "Suresh"), new StudentCollection(98, "Ramu"),
-				new StudentCollection(4, "Bhavani"), new StudentCollection(2, "Mohini"));
-		ArrayList<StudentCollection> StudentsAl = new ArrayList<>(students);
+		List<Student> students = List.of(new Student(1, "Santhosh"),
+				new Student(355, "Suresh"), new Student(98, "Ramu"),
+				new Student(4, "Bhavani"), new Student(2, "Mohini"));
+		ArrayList<Student> StudentsAl = new ArrayList<>(students);
 		System.out.println(StudentsAl);
 		Collections.sort(StudentsAl);
 		System.out.println("Desc " + StudentsAl);

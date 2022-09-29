@@ -1,10 +1,10 @@
 package com.santhosh.collections;
 
-public class StudentCollection implements Comparable<StudentCollection> {
+public class Student implements Comparable<Student> {
 	private int id;
 	private String name;
 
-	public StudentCollection(int id, String name) {
+	public Student(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -31,7 +31,7 @@ public class StudentCollection implements Comparable<StudentCollection> {
 	}
 
 	@Override
-	public int compareTo(StudentCollection that) {
+	public int compareTo(Student that) {
 		return Integer.compare(that.id, this.id);
 	}
 
