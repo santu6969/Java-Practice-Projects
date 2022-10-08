@@ -1,0 +1,5 @@
+Apple
+Bat
+cat
+dog
+Elephant

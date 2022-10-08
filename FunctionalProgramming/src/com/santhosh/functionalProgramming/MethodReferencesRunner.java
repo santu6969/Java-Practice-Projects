@@ -8,7 +8,7 @@ public class MethodReferencesRunner {
 		System.out.println(number);
 	}
 
-	static boolean findEvenNumber(Integer number) {
+	static boolean isEven(Integer number) {
 		return number % 2 == 0;
 	}
 
@@ -19,7 +19,7 @@ public class MethodReferencesRunner {
 		List.of("Ant", "Bat", "Cat", "Dog", "Elephant").stream().map(String::length)
 				.forEach(MethodReferencesRunner::print);
 
-		int maxEvenNumber = List.of(12, 32, 33, 54, 65, 73, 62).stream().filter(MethodReferencesRunner::findEvenNumber)
+		int maxEvenNumber = List.of(12, 32, 33, 54, 65, 73, 62).stream().filter(MethodReferencesRunner::isEven)
 				.max(Integer::compare).orElse(0);
 		System.out.println(maxEvenNumber);
 	}
