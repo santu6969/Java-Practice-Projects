@@ -66,8 +66,8 @@ public class EqualsRunner {
 //
 
 //Static Variables and Methods
-//		// When the variables shouldn't have multiple instance variables - ex: private static int count;
-//		// Unique value for all Instances(We Should share the data across multiple instances)
+//		// When the variables shouldn't have multiple instances - ex: private static int count;
+//		// Unique value for all Instances(We can the data across multiple instances)
 //		// Same with Method level 
 //		// ex: public static void someMethod(){}	ex: ClassName.someMethod()[Not Instance name here]
 //		// Inside a Static method you cannot access instance level data.

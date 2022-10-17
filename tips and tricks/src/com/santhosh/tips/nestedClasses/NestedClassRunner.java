@@ -14,6 +14,7 @@ public class NestedClassRunner {
 
 		NestedClassRunner nestedClassRunner = new NestedClassRunner();
 		InnerClass innerClass = nestedClassRunner.new InnerClass();
+		// Without Main class instance, Inner class instance can't be created.
 	}
 
 }
